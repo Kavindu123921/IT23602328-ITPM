@@ -144,6 +144,66 @@ const cases = [
     name: "Convert a short greeting",
     input: "aayuboovan!",
     expected: "ආයුබෝවන්!",
+  },
+  {
+    id: "Neg_Fun_0001",
+    name: "Broken line formatting",
+    input: "mama gedhara yanavaa oyaa enawadha?",
+    expected: "මම ගෙදර යනවා ඔයා එනවද?",
+  },
+  {
+    id: "Neg_Fun_0002",
+    name: "Mixed punctuation confusion",
+    input: "oyaata kohomadha???!!! mama ahanawa!!!",
+    expected: "ඔයාට කොහොමද???!!! මම අහනවා!!!",
+  },
+  {
+    id: "Neg_Fun_0003",
+    name: "Random character string ",
+    input: "kpighhjaynnvbtknnobh",
+    expected: "[No meaningful output expected]",
+  },
+  {
+    id: "Neg_Fun_0004",
+    name: "English-dominant mixed input",
+    input: "Please send  Zoom meeting link ASAP mama balannam aawadha kiyalaa",
+    expected: "Please send  Zoom meeting link ASAP මම බලන්නම් ආවද කියලා",
+  },
+  {
+    id: "Neg_Fun_0005",
+    name: "Missing spaces in common request phrase",
+    input: "matapaankannaoone",
+    expected: "මට පාන් කන්න ඕනෙ",
+  },
+  {
+    id: "Neg_Fun_0006",
+    name: "Mixed English dominance",
+    input: "please mama meeting eka reschedule karanna try karanawa tomorrow morning",
+    expected: "please මම meeting එක reschedule කරන්න try කරනවා tomorrow morning",
+  },
+  {
+    id: "Neg_Fun_0007",
+    name: "Improper punctuation cleanup",
+    input: "oya enne kawadha??? mama balagena inne!!!",
+    expected: "ඔයා එන්නෙ කවදද??? මම බලාගෙන ඉන්නේ!!!",
+  },
+  {
+    id: "Neg_Fun_0008",
+    name: "Joined words without proper spacing",
+    input: "mamabathkanavaa ",
+    expected: "මම බත් කනවා ",
+  },
+  {
+    id: "Neg_Fun_0009",
+    name: "Extreme slang and informal mixed content",
+    input: "machaang aiyoo adha supiriyata vaeda karapanko bro aeththatama loku vaedak",
+    expected: "මචාන් අයියෝ අද සුපිරියට වැඩ කරපන්කො bro ඇත්තටම ලොකු වැඩක්",
+  },
+  {
+    id: "Neg_Fun_0010",
+    name: "Validate improper handling of repeated emphasis words",
+    input: "mee ballaa lassanayilassanayilassanayi",
+    expected: "මේ බල්ලා ලස්සනයි ලස්සනයි ලස්සනයි",
   }
 ];
 
